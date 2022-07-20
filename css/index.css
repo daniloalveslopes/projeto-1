@@ -10,9 +10,13 @@
     --azul: #00285f;
     --cinza: #ededed
 }
+html{
+    scroll-behavior: smooth;
+}
 html, body {
     width: 100%;
     overflow-x: hidden;
+    
 }
 header {
     max-width: 100%;
@@ -516,7 +520,10 @@ section .card-wrepper {
     }
     .header img {
         width: 55%;
-    } 
+    }
+    section .filtros{
+        margin-left: 80px;
+    }
 }
 @media (max-width: 300px) {
     .content .header {
@@ -613,6 +620,7 @@ section .card-wrepper {
     }
     .filtros {
         display: block;
+        
     }
 }
 @media (max-width: 1024px) {
@@ -634,4 +642,28 @@ section .card-wrepper {
             align-items: flex-start;
             
         }
+}
+
+@media (max-width: 756px) {
+    section .filtros{
+        margin-left: 80px;
+    }
+}
+@media (max-width: 576px) {
+    
+}
+@media (max-width:569px){
+    section .filtros{
+        margin-left: 80px;
+        margin-top: 240px;
+    }
+    .title-repper{
+       position: relative;
+       top: -220px;
+       left: 60px;
+    }
+    .card-wrepper{
+        position: relative;
+        left: -84px;
+    }
 }
